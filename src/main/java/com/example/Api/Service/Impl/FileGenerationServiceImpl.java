@@ -16,6 +16,7 @@ public class FileGenerationServiceImpl implements FileGenerationService {
       /*File file = new File();
 
         file.setName(name);
+
         file.setFileType(fileType);
        */
        File file = new File("D:/test.txt");
