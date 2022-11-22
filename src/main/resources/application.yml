@@ -21,7 +21,11 @@ spring.datasource:
    validationTimeout: 5000
 
 server:
-   port: 8080
+   port: 8081
+   test: 0
 
 activemq:
   broker-url: failover:(tcp://localhost:61616,tcp://localhost:61616)?timeout=30000&randomize=true
+
+amq:
+  name: USER_IN

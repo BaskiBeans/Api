@@ -2,9 +2,12 @@ package com.example.Api.Rest;
 
 import com.example.Api.DAO.UserDAO;
 import com.example.Api.DTO.UserReqDTO;
+import com.example.Api.JMS.ActiveMQConfig;
+import com.example.Api.JMS.ActiveMQReceiver;
 import com.example.Api.JMS.ActiveMQSender;
 import com.example.Api.Service.FileGenerationService;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.activemq.Message;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.MediaType;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -26,6 +29,9 @@ public class Ping {
     private ActiveMQSender sender;
 
     @Autowired
+    private ActiveMQReceiver receiver;
+
+    @Autowired
     private FileGenerationService fileGenerationService;
 
 
@@ -38,6 +44,8 @@ public class Ping {
         //log.info("Got it");
         //
      sender.send("USER_IN","Garnacho");
+
+
 
 
 
@@ -174,6 +182,8 @@ public class Ping {
 		}
 		return null;
 	}
-     * 
+
      */
+
+
 }

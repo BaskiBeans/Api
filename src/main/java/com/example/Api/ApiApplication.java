@@ -16,10 +16,11 @@ public class ApiApplication {
 	public static void main(String[] args) {
 		SpringApplication.run(ApiApplication.class, args);
 
-	System.out.println("gvvd");
+
+
 		SimpleDateFormat format = new SimpleDateFormat("yyyy-mm-dd");
 		Date date = new Date(System.currentTimeMillis());
-		System.out.println("An error occured"+ format.format(date));
+		System.out.println("Launch Time"+ format.format(date));
 	}
 
 }
