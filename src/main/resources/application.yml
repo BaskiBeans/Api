@@ -1,7 +1,7 @@
 spring.datasource:
-  url: jdbc:mysql://127.0.0.1:3306/sys?characterEncoding=UTF-8&allowMultiQueries=true&useTimezone=true&serverTimezone=Asia/Kuala_Lumpur
+  url: jdbc:mysql://localhost:3306/db_demo
   username: root
-  password: alpha_D$N
+  password: Thivya_Bg_123
   #username: root
   #password:
   type: com.zaxxer.hikari.HikariDataSource
